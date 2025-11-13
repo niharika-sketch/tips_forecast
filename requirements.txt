@@ -1,0 +1,11 @@
+pandas
+numpy
+torch
+scikit-learn
+openmeteo-requests
+requests-cache
+retry-requests
+matplotlib
+aiohttp
+geopy
+env_canada
