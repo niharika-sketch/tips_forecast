@@ -4,9 +4,7 @@ An ML solution for forecasting restaurant tips using historical sales, calendar 
 Fully automated — from data ingestion to model inference — and optimized for reproducible, multi-city forecasting experiments.
 
 ---
-
 ## Directory Structure
-
 src/
 │
 ├── features.py              # Feature engineering: calendar, rolling, fallback logic
@@ -14,7 +12,8 @@ src/
 ├── weather.py               # ECCC/GeoMet weather fetch + normalization
 ├── train_eval_infer.py      # Unified training + inference entrypoint
 ├── plot_weekly_comparison.py# Weekly performance visualization
-└── utils/prepare_merged_data.py & Data_Extraction.py
+└── utils/prepare_merged_data.py(not used - for sanity check) & Data_extraction.py (Used to grab data from postgres via django container) 
+
 
 ## Pipeline Summary
 1. Weather Fetching - weather.py downloads and cleans Environment Canada (ECCC/GeoMet) data for each city, performs coverage checks, and fills missing values.
